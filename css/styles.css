@@ -2,27 +2,59 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
 
-body{background-color: #fbfbfb;  font-size: 18px; display: flex; flex-direction: column; align-items: center;justify-content: center; }
+body{background-color: #fbfbfb;
+  min-width: 360px;
+   font-size: 18px; }
 
-figure{ height: 300px; width: 300px; border-radius:160%; overflow:hidden;}
+figure{ height: 300px;
+     width: 300px;
+      border-radius:160%; 
+      overflow:hidden;}
 
-h1{font-size: 36px; font-family: 'Lato', sans-serif; font-weight: 700;}
+h1{font-size: 36px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;}
 
-p{font-size: 18px; font-family: 'Lato', sans-serif; font-weight: 400;line-height: 1.2;}
+p{font-size: 18px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+    line-height: 1.2;}
 
-a{font-size: 20px; }
+a {color: inherit;
+   font-size: 20px; }
 
-header{background-color: #fbfbfb; font-size: small; display: flex; flex-direction: column; align-items: center;justify-content: center;}
+header{background-color: #fbfbfb; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center}
+     z-index: 100;
+    top: 0;
+    box-shadow: 1px; 4px; 6px; 
+}
 
-section{color: rgba(175,89,158, 0.3);display: flex; flex-direction: column; align-items: center;justify-content: center}
+section{color: rgba(175,89,158, 0.3);
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center}
 
 article{ font-size: 18px;}
 
 h2{font-size: 28px; }
 
-button{color: #af599e; font-size: 20px;display:flex; flex-direction:column; align-items: center;justify-content: center;}
+button{color:#af599e;
+     font-size: 20px;
+     display:flex;
+     flex-direction:column; 
+     align-items: center;
+     justify-content: center;}
 
-footer{color:#af599e; display: flex; flex-direction: column; align-items: center;justify-content: center}
+footer{color:#af599e; 
+       display: flex; 
+       flex-direction: column; 
+       align-items: center;
+       justify-content: center}
 
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
 */
@@ -33,8 +65,8 @@ footer{color:#af599e; display: flex; flex-direction: column; align-items: center
     margin: 0;
     padding: 0;
     /* Para que el scrolleo en la one page sea suave */
-    scroll-behavior: smooth;
-}
+    scroll-behavior: smooth;}
+    
 
 /* Para quitar los puntos a los items de listas */
 ul{ list-style: none;
@@ -44,7 +76,7 @@ ul{ list-style: none;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    overflow: hidden; width: 150%;}
+    overflow: hidden; width: 150% ;}
 
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
@@ -55,7 +87,11 @@ a {text-decoration: none;
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
 main {max-width: 1200px;
-    margin: auto;display: flex; flex-direction: column; align-items: center;justify-content: center}
+    margin: auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center}
 
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
