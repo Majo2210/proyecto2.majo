@@ -7,7 +7,7 @@ body{background-color: #fbfbfb;
    font-size: 18px; }
 
 figure{ height: 300px;
-     width: 300px;
+      width: 300px;
       border-radius:160%; 
       overflow:hidden;}
 
@@ -27,24 +27,27 @@ header{background-color: #fbfbfb;
     display: flex; 
     flex-direction: column; 
     align-items: center;
-    justify-content: center}
+    justify-content: center;
      z-index: 100;
-    top: 0;
-    box-shadow: 1px; 4px; 6px; 
-}
+    top:0;
+    box-shadow: 1px; 4px; 6px;}
+nav{ display: flex;}
 
-section{color: rgba(175,89,158, 0.3);
+section{padding: 10px;
+        color: rgba(175,89,158, 0.3);
         display: flex; 
         flex-direction: column; 
         align-items: center;
         justify-content: center}
 
-article{ font-size: 18px;}
+.article{ font-size: 18px;
+          position: center;}
 
 h2{font-size: 28px; }
 
 button{color:#af599e;
      font-size: 20px;
+     padding: 10px;
      display:flex;
      flex-direction:column; 
      align-items: center;
@@ -89,6 +92,7 @@ a {text-decoration: none;
 main {max-width: 1200px;
     margin: auto;
     display: flex; 
+    padding: 10px;
     flex-direction: column; 
     align-items: center;
     justify-content: center}
