@@ -1,15 +1,27 @@
 /* En este archivo escriban su CSS */
+/* El reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;}
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
 
 body{background-color: #fbfbfb;
   min-width: 360px;
-   font-size: 18px; }
+   font-size: 18px;}
 
-figure{ height: 300px;
-      width: 300px;
-      border-radius:160%; 
-      overflow:hidden;}
+
+.foto-imagen {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    overflow: hidden;}
+
 
 h1{font-size: 36px; 
     font-family: 'Lato', sans-serif; 
@@ -59,17 +71,7 @@ footer{color:#af599e;
        align-items: center;
        justify-content: center}
 
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*/
-
-/* Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
-    scroll-behavior: smooth;}
-    
+  
 
 /* Para quitar los puntos a los items de listas */
 ul{ list-style: none;
