@@ -42,7 +42,7 @@ header{background-color: #fbfbfb;
     justify-content: center;
      z-index: 100;
     top:0;
-    box-shadow: 1px; 4px; 6px;}
+    box-shadow: 1px; }
 nav{ display: flex;}
 
 section{padding: 10px;
@@ -81,7 +81,8 @@ ul{ list-style: none;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    overflow: hidden; width: 150% ;}
+    overflow: hidden;
+    width: 150% ;}
 
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
