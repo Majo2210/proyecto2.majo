@@ -24,8 +24,9 @@ body{background-color: #fbfbfb;
        background-position: 50%;
        border-radius: 150%;
        background-size: 100% auto;
-       padding: 10px;}
-
+       padding: 10px;
+       overflow: hidden;}
+       
 
 h1{font-size: 36px; 
     font-family: 'Lato', sans-serif; 
@@ -38,8 +39,10 @@ p{font-size: 18px;
     line-height: 1.2;
     color: #af599e;}
 
-a {color: inherit;
-   font-size: 20px; }
+a {color:rgb(73, 2, 2);
+    background-color: #f3ebf1;
+   font-size: 30px; 
+   font-weight: bold;}
 
 header{background-color: #fbfbfb; 
     display: flex; 
@@ -66,12 +69,11 @@ h2{font-size: 28px;
 
 button{color:#330329;
      font-size: 20px;
-     font color: #323232;
-     padding: 20px;
+     padding:10px;
      display:flex;
      flex-direction:column; 
-     align-items: center;
-     justify-content: center;}
+     align-items:center;
+     justify-content:center;}
 
 footer{color:#af599e; 
        display: flex; 
