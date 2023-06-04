@@ -15,14 +15,13 @@ body{background-color: #fbfbfb;
      font-size: 18px;}
 
 
-.foto-imagen {
+.imagen{
        /* cambia estos dos valores para definir el tamaño de tu círculo */
-       height:300px;
-       width: 300px;
+       height: 120px;
+       width: 120px;
        /* los siguientes valores son independientes del tamaño del círculo */
-       background-repeat: no-repeat;
-       background-position: 50%;
-       border-radius: 150%;
+       background-position: 100%;
+       border-radius: 25%;
        background-size: 100% auto;
        padding: 10px;
        overflow: hidden;}
@@ -32,6 +31,11 @@ h1{font-size: 36px;
     font-family: 'Lato', sans-serif; 
     font-weight: 700;
     color: #af599e;}
+
+h2{font-size: 36px;
+   font-family: 'lato';
+   font-weight: 700;
+   color: #af599e;}
 
 p{font-size: 18px; 
     font-family: 'Lato', sans-serif; 
@@ -92,7 +96,8 @@ ul{ list-style: none;
     padding: 0;
     list-style-type: none;
     overflow: hidden;
-    width: 150% ;}
+    width: 90%;
+    height: 90%;}
 
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
