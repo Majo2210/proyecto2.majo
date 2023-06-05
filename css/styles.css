@@ -14,19 +14,37 @@ body{background-color: #fbfbfb;
      min-width: 360px;
      font-size: 18px;}
 
+.active{ font-weight: bold;
+        color: rgb(134, 10, 118);
+      }
+      
+ .imagen-de-majo {
+        /* cambia estos dos valores para definir el tamaño de tu círculo */
+        height: 120%;
+        max-width: 120%;
+        /* los siguientes valores son independientes del tamaño del círculo */
+        float: right;
+        background-position: 50%;
+        border-radius: 50%;
+        background-size: cover;
+        padding: 10%;
+        overflow: hidden;}
 
-.imagen{
-       /* cambia estos dos valores para definir el tamaño de tu círculo */
-       height: 120px;
-       width: 120px;
-       /* los siguientes valores son independientes del tamaño del círculo */
-       background-position: 50%;
-       border-radius: 50%;
-       background-size: 100% auto;
-       padding: 10px;
-       overflow: hidden;}
+  .article{ font-size: 20px;
+            position: center;
+            float: left;}
+    
+   .button{color:#330329;
+            border-radius: 50px;
+            font-size: 20px;
+            padding:10px;
+            margin-top: 20px;
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction:column; 
+            align-items:center;
+            justify-content:center;}     
        
-
 h1{font-size: 36px; 
     font-family: 'Lato', sans-serif; 
     font-weight: 700;
@@ -48,59 +66,78 @@ a {color:rgb(73, 2, 2);
    font-size: 30px; 
    font-weight: bold;}
 
-header{background-color: #fbfbfb; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-     z-index: 100;
-    top:0;
-    box-shadow: 1px; }
-nav{ display: flex;}
+   header {
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Añade valores para el sombreado */
+    padding: 40px;
+    }
 
-section{padding: 20px;
+    @media (max-whidth: 600px) { header {padding: 20px;}}
+
+    nav{ display: flex;}
+
+section-inicio{padding: 20%;
         color: rgba(175,89,158, 0.3);
         display: flex; 
+        flex-wrap: wrap;
         flex-direction: column; 
-        align-items: center;
-        justify-content: center}
+        align-items:flex-start;
+        justify-content:flex-start}
 
-.article{ font-size: 20px;
-          position: center;}
+ 
+        @media (max-width: 768px) {
+               section-inicio {
+              padding: 10%;   } }
+              
+section-contacto{padding: 20%;
+                color: rgba(175,89,158, 0.3);
+                display: flex; 
+                flex-wrap: wrap;
+                flex-direction: column; 
+                align-items: center;
+                justify-content: center}
+        
+                @media (max-width: 768px) {
+                    section-contacto {
+                      padding: 10%;  }}           
+
+
 
  
 
 h2{font-size: 28px;
    color: #af599e; }
 
-.button{color:#330329;
-     border-radius: 50px;
-     font-size: 20px;
-     padding:10px;
-     margin-top: 20px;
-     display:flex;
-     flex-direction:column; 
-     align-items:center;
-     justify-content:center;}
+
 
 footer{color:#af599e; 
        display: flex; 
+       flex-wrap: wrap;
        flex-direction: column; 
        align-items: center;
        justify-content: center}
+
+    @media (max-width: 600px) {
+        footer {
+          padding: 10px;
+          text-align: center; }}
 
   
 
 /* Para quitar los puntos a los items de listas */
 ul{ list-style: none;
     display: flex; /* Hacemos flex al ul */
-    justify-content: center; /* centramos en el eje horizontal*/
     justify-content: space-evenly; /* Aplicamos separación a los elementos dentro del ul */
     margin: 0;
     padding: 0;
-    list-style-type: none;
     overflow: hidden;
-    width: 90%;
+    max-width: 100%;
     height: 90%;}
     
 
@@ -118,6 +155,12 @@ main {max-width: 1200px;
     flex-direction: column; 
     align-items: center;
     justify-content: center}
+
+    @media (max-width: 768px) {
+        main {
+          padding: 5px;
+        }
+      }
 
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
