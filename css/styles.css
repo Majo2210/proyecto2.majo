@@ -72,7 +72,7 @@ a {color:rgb(73, 2, 2);
    font-size: 30px; 
    font-weight: bold;}
 
-.header { background-color: #b7dbf3;
+.header { background-color: #f8deee;
     display: flex;
     flex-direction: row;
     height: 30%;
@@ -116,7 +116,7 @@ section#inicio {padding: 20%;
 
  article .seccion-2{padding: 60px;
                     text-align: center;
-                    background-color: aqua;}    
+                    background-color: rgb(133, 78, 107);}    
 
  @media (max-width: 768px) { .section-2 {
                               padding: 30%;  }}
