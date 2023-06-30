@@ -170,7 +170,7 @@ body
 footer
 {
     line-height: 3;
-    background-color:var(--colorBtn);
+    background-color:pink;
     font-size: 2em;
     color: var(--colorFondoDoc);
     text-align: center;
