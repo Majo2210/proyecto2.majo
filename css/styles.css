@@ -5,7 +5,7 @@
     /* estas son variables de CSS que al cambiar 
     los valores aqui se cambiaran donde esten aplicadas
      esas variables en el documento ejemplo:si cambias la fuente se cambiara en el documento */
-    --fuente:'Lato', sans-serif;
+    --fuentes:'Lato', sans-serif;
     --anchominimo:360px;
     --colorfondoDoc:#fbfbfb;
     --colorbtn:#af599e;
@@ -22,11 +22,11 @@
     margin: 0;
     box-sizing:border-box;
     font-size: 18px;
-    font-family: var(--fuentes);
+    font-family: var(--fuente);
 }
 
 /* Inicio header */
-header
+.header
 {
     height: 200px;
     display: flex;
@@ -60,7 +60,7 @@ header
             que estan dentro de las li del ul que esta dentro de header
             con target */
             & .activo
-            { background-color: var(--colorBtn);             
+            { background-color: var(--colorbtn);             
             }
         }
     
@@ -77,7 +77,7 @@ body
 main
 {  
     margin-top: 250px;
-    background-color:var(--colorFondoDoc);
+    background-color:var(--colorfondoDoc);
 
     /* seccion 1  modificar con media Query flex-direction:column;*/
     & .seccion1 
@@ -88,8 +88,7 @@ main
         align-items:center;
         flex-wrap: wrap;
         
-        & img
-        {
+       & img {
             width: 200px;
             border-radius: 50%;
         }
@@ -112,7 +111,7 @@ main
         & a
         {
             padding: 20px;
-            background-color: var(--colorBtn);
+            background-color: var(--colorbtn);
             display: block;
             text-align: center;
             border-radius: 10px;
