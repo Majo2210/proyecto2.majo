@@ -1,12 +1,12 @@
 classList.add('active')
 
-var menuItems = document.querySelectorAll('#Menu li');
+var menuItems = document.querySelectorAll('#nav-header');
 
 // Recorre todos los ítems y agrega un evento de clic a cada uno
-menuItems.forEach(function(item) {
+menuItems.forEach(function(nav) {
   item.addEventListener('click', function() {
     // Remueve la clase "active" de todos los ítems
-    menuItems.forEach(function(item) {
+    menuItems.forEach(function(nav) {
       item.classList.remove('active');
     });
 
@@ -16,13 +16,11 @@ menuItems.forEach(function(item) {
 });
 
 // Aplica la clase "active" inicialmente solo a los ítems "Inicio" y "Contacto"
-var inicioItem = document.querySelector('#Menu li:first-child');
-var contactoItem = document.querySelector('#Menu li:last-child');
+var inicioItem = document.querySelector('nav li:first-child');
+var contactoItem = document.querySelector('nav li:last-child');
 
 inicioItem.classList.add('active');
 contactoItem.classList.add('active');
-
-
 
 
 
