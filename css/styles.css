@@ -38,18 +38,19 @@
     z-index: 500;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;}
 
-    & img
-    {width: 150px;    }
-    & ul
+    .header img {width: 150px;    }
+
+    .header ul
     { display: flex;}
 
-        & li
+    .header li
         {
             margin: 10px;
             list-style: none;}
-         & a{
+
+    .header a{
                 text-decoration: none;
                 padding: 10px;
                 border-radius: 10px;
@@ -59,10 +60,10 @@
             /* clase a añadir con Javascript para a las etiquetas a
             que estan dentro de las li del ul que esta dentro de header
             con target */
-            & .activo
-            { background-color: var(--colorbtn);             
+    .header  .activo
+ { background-color: var(--colorbtn);             
             }
-        }
+        
     
 /* final header */
 
@@ -74,42 +75,41 @@ body
     min-width: 360px;
 }
 
-main
+.main
 {  
     margin-top: 250px;
-    background-color:var(--colorfondoDoc);
+    background-color:var(--colorfondoDoc);}
 
     /* seccion 1  modificar con media Query flex-direction:column;*/
-    & .seccion1 
+.seccion1 
     {
         display: flex;
         padding: 20px;
         justify-content: center;
         align-items:center;
         flex-wrap: wrap;
+        margin-top: 200px;}
         
-       & img {
+.seccion1 img {
             width: 200px;
             border-radius: 50%;
         }
-        & article
+.seccion1 article
         {
            
             margin: 10px;
             width: 500px;
             display: flex;
-            flex-direction: column;
+            flex-direction: column;}
             
     
-            & h1
-            {
+   .seccion1 h1 {
                 padding: 10px;
                 font-size: 30px;
                 text-align: center;
             }
-        }
-        & a
-        {
+        
+    .seccion1 a {
             padding: 20px;
             background-color: var(--colorbtn);
             display: block;
@@ -123,50 +123,47 @@ main
           
          }
 
-        & a:hover
+    .seccion1 a:hover
         {
             background-color:var(--resplandor);
             transition: 0.6s;
             color:black;
 
         }
-    }
 
-& .seccion2{ 
+
+.seccion2{ 
     display: flex;
-    justify-content: center;
+    justify-content: center;}
     
-    & article
+.seccion2 article
     {
         max-width: 600px;
         min-width: 360px;
         background-color:var(--hablemosBgColor);
         padding: 20px;
-        margin-top: 100px;
-        & h2
+        margin-top: 100px;}
+
+.seccion2 h2
         {
             text-align: center;
             padding: 20px;
             font-size: 32px;
         }
-    }
-}
 
-& .seccion3-Redes
+.seccion3-Redes
 {   
         display: flex;
         justify-content: center;
         margin-top: 100px;
-        flex-wrap: wrap;
+        flex-wrap: wrap;}
        
-        & img
+.seccion3-Redes img
         {
-            width: 3em;
+            width: 2em;
             margin: 30px;
             
         }
-}
-}
 
 /* footer */
 footer
@@ -186,4 +183,22 @@ footer
         flex-direction:column; 
     }
     
+}
+@media (max-width: 768px) {
+    .seccion1 {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: flex-start; /* Alinear al inicio */
+        margin-top: 0; /* Eliminar margen superior */
+    }
+
+    .seccion1 img {
+        width: 150px; /* Reducir el tamaño de la imagen */
+        margin-bottom: 10px; /* Agregar margen inferior para separar la imagen del artículo */
+    }
+
+    .seccion1 article {
+        width: 100%; /* Hacer que el artículo ocupe todo el ancho disponible */
+        max-width: 400px; /* Establecer un ancho máximo para evitar que se extienda demasiado */
+        margin-bottom: 20px; /* Agregar margen inferior para separar los artículos */
+    }
 }
