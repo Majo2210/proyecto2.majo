@@ -48,7 +48,8 @@
     .header li
         {
             margin: 10px;
-            list-style: none;}
+            list-style: none;
+        text-decoration: none;}
 
     .header a{
                 text-decoration: none;
@@ -140,7 +141,7 @@ body
     {
         max-width: 600px;
         min-width: 360px;
-        background-color:rgb(160, 78, 92);
+        background-color:rgb(236, 157, 170);
         padding: 20px;
         margin-top: 100px;}
 
