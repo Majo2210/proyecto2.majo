@@ -31,7 +31,7 @@
     height: 200px;
     display: flex;
     justify-content: space-between;
-    background-color: var(--bgHeader);
+    background-color: rgb(195, 71, 211);
     align-items:center;
     padding: 15px;
     position: fixed;
@@ -141,7 +141,7 @@ body
     {
         max-width: 600px;
         min-width: 360px;
-        background-color:rgb(236, 157, 170);
+        background-color:rgb(193, 75, 204);
         padding: 20px;
         margin-top: 100px;}
 
@@ -170,7 +170,7 @@ body
 footer
 {
     line-height: 3;
-    background-color:pink;
+    background-color:rgb(165, 76, 192);
     font-size: 2em;
     color: var(--colorFondoDoc);
     text-align: center;
