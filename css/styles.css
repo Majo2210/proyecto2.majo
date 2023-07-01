@@ -28,7 +28,7 @@
 /* Inicio header */
 .header
 {
-    height: 200px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     background-color: rgb(195, 71, 211);
