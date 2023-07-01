@@ -201,5 +201,6 @@ footer
         width: 100%; /* Hacer que el artículo ocupe todo el ancho disponible */
         max-width: 400px; /* Establecer un ancho máximo para evitar que se extienda demasiado */
         margin-bottom: 20px; /* Agregar margen inferior para separar los artículos */
-    }
+    } 
+    .seccion1 {margin-top: 300px;}
 }
